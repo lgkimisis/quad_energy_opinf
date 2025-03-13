@@ -6,7 +6,7 @@ The repository includes the data and codes for the paper "On the representation 
 
 $$\frac{\partial u}{\partial t}=0.2 u  \nabla \cdot u + 0.002 \nabla^2{u}.$$
 
-The timestep is 0.01 s and the simulation time is 4s.
+The timestep is 0.01 s and the simulation time is 4s. The numerical solution by discretizing the diffusion term with 2nd order central differences and the advection term with a second order upwind scheme and integrating using ode45 in MATLAB2024a.
 
 %----------------------------------------------------------------------%
 
