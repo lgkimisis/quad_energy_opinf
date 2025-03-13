@@ -2,19 +2,19 @@ The repository includes the data and codes for the paper "On the representation 
 
 %----------------------------------------------------------------------%
 
--(xpos_nonl2D.txt, ypos_nonl2D.txt, usol2_nonl2D.txt) correspond to the x,y coordinate data and the solution of a 2D Bugers' equation on a 1x1 square with periodic boundary conditions
+(xpos_nonl2D.txt, ypos_nonl2D.txt, usol2_nonl2D.txt) correspond to the x,y coordinate data and the solution of a 2D Bugers' equation on a 1x1 square with periodic boundary conditions
 
 $$\frac{\partial u}{\partial t}=0.2 u  \nabla \cdot u + 0.002 \nabla^2{u}.$$
 
-The timestep is 0.01 s and the simulation time is 4s. The numerical solution by discretizing the diffusion term with 2nd order central differences and the advection term with a second order upwind scheme and integrating using ode45 in MATLAB2024a.
+and initial condition $$u(t = 0) = cos(2\pi x)cos(2\pi y)$$. The timestep is 0.01 s and the simulation time is 4s. The numerical solution by discretizing the diffusion term with 2nd order central differences and the advection term with a second order upwind scheme and integrating using ode45 in MATLAB2024a.
 
 %----------------------------------------------------------------------%
 
--OpInf_2D_Burg.m performs sequential Operator Inference without constraints on the quadratic term, for several reduced dimensions r=[5,10,15,20,25,30]
+OpInf_2D_Burg.m performs sequential Operator Inference without constraints on the quadratic term, for several reduced dimensions r=[5,10,15,20,25,30]
 
 %----------------------------------------------------------------------%
 
--OpInf_Energy_2D_Burg.m performs sequential Operator Inference for several reduced dimensions r=[5,10,15,20,25,30], with constraints on the quadratic term, such that 
+OpInf_Energy_2D_Burg.m performs sequential Operator Inference for several reduced dimensions r=[5,10,15,20,25,30], with constraints on the quadratic term, such that 
 
 $$\mathbf{x}^\top\mathbf{H} \left( \mathbf{x} \otimes \mathbf{x} \right) =0, \forall \mathbf{x} \in \mathbb{R}^n.$$
 
@@ -24,6 +24,6 @@ $$H=[H_1, \dots H_n],$$ with $$H_i = - H_i^T, \quad \forall i$$
 
 %----------------------------------------------------------------------%
 
--Comparison_Plots.m creates the plots in the paper.
+Comparison_Plots.m creates the plots in the paper.
 
 %----------------------------------------------------------------------%
