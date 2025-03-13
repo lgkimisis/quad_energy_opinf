@@ -20,7 +20,7 @@ $$\mathbf{x}^\top\mathbf{H} \left( \mathbf{x} \otimes \mathbf{x} \right) =0, \fo
 
 by enforcing
 
-$$H=[H_1, \dots H_n],$$ with $$H_i = - H_i^T, \quad \forall i$$
+$$H=[H_1, \dots H_n],$$ with $$H_i = - H_i^T, \quad \forall i \in [1, \dots n]$$
 
 %----------------------------------------------------------------------%
 
