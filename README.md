@@ -16,7 +16,11 @@ The timestep is 0.01 s and the simulation time is 4s.
 
 -OpInf_Energy_2D_Burg.m performs sequential Operator Inference for several reduced dimensions r=[5,10,15,20,25,30], with constraints on the quadratic term, such that 
 
-$$\mathbf{x}(t)^\top\mathbf{H} \left( \mathbf{x}(t) \otimes \mathbf{x}(t) \right) =0, \forall \mathbf{x}(t) \in \mathbb{R}^n.$$
+$$\mathbf{x}^\top\mathbf{H} \left( \mathbf{x} \otimes \mathbf{x} \right) =0, \forall \mathbf{x} \in \mathbb{R}^n.$$
+
+by using
+
+$$H=[H_1, \dots H_n],$$ with $$H_i = - H_i^T, \qquad \forall i$$
 
 %----------------------------------------------------------------------%
 
