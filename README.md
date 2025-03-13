@@ -18,9 +18,9 @@ The timestep is 0.01 s and the simulation time is 4s.
 
 $$\mathbf{x}^\top\mathbf{H} \left( \mathbf{x} \otimes \mathbf{x} \right) =0, \forall \mathbf{x} \in \mathbb{R}^n.$$
 
-by using
+by enforcing
 
-$$H=[H_1, \dots H_n],$$ with $$H_i = - H_i^T, \qquad \forall i$$
+$$H=[H_1, \dots H_n],$$ with $$H_i = - H_i^T, \quad \forall i$$
 
 %----------------------------------------------------------------------%
 
