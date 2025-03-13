@@ -1,4 +1,4 @@
-The repository includes the data and codes for the paper "On the representation of energy-preserving quadratic operators with application to Operator Inference" by L. Gkimisis, I. Pontes, P. Goyal and P. Benner.
+The repository includes the data and codes for the numerical example of the paper "On the representation of energy-preserving quadratic operators with application to Operator Inference" by L. Gkimisis, I. Pontes, P. Goyal and P. Benner.
 
 %----------------------------------------------------------------------%
 
